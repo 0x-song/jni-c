@@ -41,7 +41,7 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = E$:/WD/diy/JNIDemoC/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target JNIDemoC
+# Object build statements for SHARED_LIBRARY target JNIDemoC
 
 
 #############################################
@@ -49,30 +49,32 @@ cmake_ninja_workdir = E$:/WD/diy/JNIDemoC/cmake-build-debug/
 
 build cmake_object_order_depends_target_JNIDemoC: phony || .
 
-build CMakeFiles/JNIDemoC.dir/main.cpp.obj: CXX_COMPILER__JNIDemoC_unscanned_Debug E$:/WD/diy/JNIDemoC/main.cpp || cmake_object_order_depends_target_JNIDemoC
-  DEP_FILE = CMakeFiles\JNIDemoC.dir\main.cpp.obj.d
+build CMakeFiles/JNIDemoC.dir/code/com_sz_jvm_NativeMethod.cpp.obj: CXX_COMPILER__JNIDemoC_unscanned_Debug E$:/WD/diy/JNIDemoC/code/com_sz_jvm_NativeMethod.cpp || cmake_object_order_depends_target_JNIDemoC
+  DEFINES = -DJNIDemoC_EXPORTS
+  DEP_FILE = CMakeFiles\JNIDemoC.dir\code\com_sz_jvm_NativeMethod.cpp.obj.d
   FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
   INCLUDES = -I"D:/Program Files/Java/jdk-8/include" -I"D:/Program Files/Java/jdk-8/include/win32"
   OBJECT_DIR = CMakeFiles\JNIDemoC.dir
-  OBJECT_FILE_DIR = CMakeFiles\JNIDemoC.dir
+  OBJECT_FILE_DIR = CMakeFiles\JNIDemoC.dir\code
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target JNIDemoC
+# Link build statements for SHARED_LIBRARY target JNIDemoC
 
 
 #############################################
-# Link the executable JNIDemoC.exe
+# Link the shared library libJNIDemoC.dll
 
-build JNIDemoC.exe: CXX_EXECUTABLE_LINKER__JNIDemoC_Debug CMakeFiles/JNIDemoC.dir/main.cpp.obj
-  FLAGS = -g
+build libJNIDemoC.dll libJNIDemoC.dll.a: CXX_SHARED_LIBRARY_LINKER__JNIDemoC_Debug CMakeFiles/JNIDemoC.dir/code/com_sz_jvm_NativeMethod.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\JNIDemoC.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = JNIDemoC.exe
+  RESTAT = 1
+  TARGET_FILE = libJNIDemoC.dll
   TARGET_IMPLIB = libJNIDemoC.dll.a
-  TARGET_PDB = JNIDemoC.exe.dbg
+  TARGET_PDB = JNIDemoC.dll.dbg
 
 
 #############################################
@@ -100,7 +102,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build JNIDemoC: phony JNIDemoC.exe
+build JNIDemoC: phony libJNIDemoC.dll
 
 # =============================================================================
 # Folder targets.
@@ -110,7 +112,7 @@ build JNIDemoC: phony JNIDemoC.exe
 #############################################
 # Folder: E:/WD/diy/JNIDemoC/cmake-build-debug
 
-build all: phony JNIDemoC.exe
+build all: phony libJNIDemoC.dll
 
 # =============================================================================
 # Built-in targets
