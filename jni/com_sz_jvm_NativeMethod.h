@@ -15,6 +15,18 @@ extern "C" {
 JNIEXPORT jstring JNICALL Java_com_sz_jvm_NativeMethod_hello
   (JNIEnv *, jclass);
 
+    /*
+     * Class:     com_sz_jvm_NativeMethod
+     * Method:    world
+     * Signature: ()V
+     */
+JNIEXPORT void JNICALL Java_com_sz_jvm_NativeMethod_world
+  (JNIEnv *, jobject);
+
+
+JNIEXPORT void JNICALL Java_com_sz_jvm_NativeMethod_field
+    (JNIEnv *, jobject);
+
 #ifdef __cplusplus
 }
 #endif
