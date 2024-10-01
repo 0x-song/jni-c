@@ -57,6 +57,14 @@ build CMakeFiles/JNIDemoC.dir/code/com_sz_jvm_NativeMethod.cpp.obj: CXX_COMPILER
   OBJECT_DIR = CMakeFiles\JNIDemoC.dir
   OBJECT_FILE_DIR = CMakeFiles\JNIDemoC.dir\code
 
+build CMakeFiles/JNIDemoC.dir/code/com_sz_jvm_JavaThread.cpp.obj: CXX_COMPILER__JNIDemoC_unscanned_Debug E$:/WD/diy/JNIDemoC/code/com_sz_jvm_JavaThread.cpp || cmake_object_order_depends_target_JNIDemoC
+  DEFINES = -DJNIDemoC_EXPORTS
+  DEP_FILE = CMakeFiles\JNIDemoC.dir\code\com_sz_jvm_JavaThread.cpp.obj.d
+  FLAGS = -g -std=gnu++11 -fdiagnostics-color=always
+  INCLUDES = -I"D:/Program Files/Java/jdk-8/include" -I"D:/Program Files/Java/jdk-8/include/win32"
+  OBJECT_DIR = CMakeFiles\JNIDemoC.dir
+  OBJECT_FILE_DIR = CMakeFiles\JNIDemoC.dir\code
+
 
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target JNIDemoC
@@ -65,7 +73,7 @@ build CMakeFiles/JNIDemoC.dir/code/com_sz_jvm_NativeMethod.cpp.obj: CXX_COMPILER
 #############################################
 # Link the shared library libJNIDemoC.dll
 
-build libJNIDemoC.dll libJNIDemoC.dll.a: CXX_SHARED_LIBRARY_LINKER__JNIDemoC_Debug CMakeFiles/JNIDemoC.dir/code/com_sz_jvm_NativeMethod.cpp.obj
+build libJNIDemoC.dll libJNIDemoC.dll.a: CXX_SHARED_LIBRARY_LINKER__JNIDemoC_Debug CMakeFiles/JNIDemoC.dir/code/com_sz_jvm_NativeMethod.cpp.obj CMakeFiles/JNIDemoC.dir/code/com_sz_jvm_JavaThread.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\JNIDemoC.dir

@@ -1,19 +1,8 @@
 # ninja log v6
-1	86	7494796028658377	CMakeFiles/JNIDemoC.dir/code/com_sz_jvm_NativeMethod.cpp.obj	a244e91e8f9ac73f
-96	193	7494796030510480	libJNIDemoC.dll	7fee944a261294bf
-96	193	7494796030510480	libJNIDemoC.dll.a	7fee944a261294bf
-3	252	7494823034374210	CMakeFiles/JNIDemoC.dir/code/com_sz_jvm_NativeMethod.cpp.obj	a244e91e8f9ac73f
-255	358	7494823037868142	libJNIDemoC.dll	7fee944a261294bf
-255	358	7494823037868142	libJNIDemoC.dll.a	7fee944a261294bf
-4	101	7494825760620589	CMakeFiles/JNIDemoC.dir/code/com_sz_jvm_NativeMethod.cpp.obj	a244e91e8f9ac73f
-101	194	7494825762451393	libJNIDemoC.dll	7fee944a261294bf
-101	194	7494825762451393	libJNIDemoC.dll.a	7fee944a261294bf
-4	111	7494833752081315	CMakeFiles/JNIDemoC.dir/code/com_sz_jvm_NativeMethod.cpp.obj	a244e91e8f9ac73f
-121	231	7494833754290757	libJNIDemoC.dll	7fee944a261294bf
-121	231	7494833754290757	libJNIDemoC.dll.a	7fee944a261294bf
-3	97	7494838477508731	CMakeFiles/JNIDemoC.dir/code/com_sz_jvm_NativeMethod.cpp.obj	a244e91e8f9ac73f
-98	194	7494838479354011	libJNIDemoC.dll	7fee944a261294bf
-98	194	7494838479354011	libJNIDemoC.dll.a	7fee944a261294bf
 3	94	7494838944731501	CMakeFiles/JNIDemoC.dir/code/com_sz_jvm_NativeMethod.cpp.obj	a244e91e8f9ac73f
 95	190	7494838946517332	libJNIDemoC.dll	7fee944a261294bf
 95	190	7494838946517332	libJNIDemoC.dll.a	7fee944a261294bf
+1	223	7494849026634607	build.ninja	a7104be61e708216
+3	90	7494849026875526	CMakeFiles/JNIDemoC.dir/code/com_sz_jvm_JavaThread.cpp.obj	71a50873b31fe4ff
+90	198	7494849028754947	libJNIDemoC.dll	82789aecdb9e9fdf
+90	198	7494849028754947	libJNIDemoC.dll.a	82789aecdb9e9fdf
